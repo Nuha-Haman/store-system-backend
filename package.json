@@ -2,15 +2,26 @@
   "name": "stores-system",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "next dev -p 3001",
+    "build": "next build && next export",
+    "start": "next start -p 3002",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "^11.6.0",
+    "@emotion/react": "^11.6.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.1.0",
+    "@mui/material": "^5.1.0",
+    "@mui/styles": "^5.1.0",
+    "axios": "^0.24.0",
+    "js-cookie": "^3.0.1",
     "next": "12.0.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "stylis": "^4.0.10",
+    "stylis-plugin-rtl": "^2.1.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",
